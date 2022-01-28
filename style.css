@@ -1,0 +1,261 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+html
+  [data-theme ='lightmode']{
+  --font-color-dark: #000
+  --handles-color: hsl(228, 34%, 66%);
+  --number-color: #000
+  --Upgrade-green-color: hsl(163, 72%, 41%);
+  --downgrade-red-color: hsl(356, 69%, 56%);
+  --background-outer-color: hsl(0, 0%, 100%);
+  --background-inner-color: hsl(227, 47%, 96%);
+  /* --twitter-color: hsl(208, 92%, 53%); */
+  /* --facebook-color: hsl(203, 89%, 53%); */
+  /* --instagram-color: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%)); */
+  /* --youtube-color: hsl(348, 97%, 39%); */
+}
+
+
+html
+[data-theme ='darkmode'] {
+  --font-color-white: #fff
+  --handles-color:  hsl(228, 34%, 66%);
+  --number-color: #fff
+  --upgrade-green-color: hsl(163, 72%, 41%);
+  --downgrade-red-color: hsl(356, 69%, 56%);
+  --background-outer-color: hsl(232, 19%, 15%);
+  --background-inner-color: hsl(228, 28%, 20%);
+  /* --twitter-color: hsl(208, 92%, 53%);
+  --facebook-color: hsl(203, 89%, 53%);
+  --instagram-color: hsl(37, 97%, 70%);
+  --youtube-color: hsl(348, 97%, 39%); */
+}
+
+body {
+  /* display: flex; */
+  /* align-items: center; */
+  justify-content: center;
+  background: var (--background-outer-color);
+  color: var (--font-color-white);
+  font-size: 11px;
+  font-family: inter, sans 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  margin: auto auto auto auto;
+  /* position: relative; */
+  width: 520px;
+  height: 450px;
+  /* background: #000; */
+  /* box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15); */
+}
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* label{
+  position: relative;
+  width: 160px;
+  height: 80px;
+}
+
+label input{
+z-index: 1;
+}
+
+label span{
+  position: absolute;
+  top:0 ;
+  left:0 ;
+  width: 100%;
+  background: green;
+  border-radius: 80px;
+  transition: 0.5s;
+
+
+  label input :checked ~ span{
+    background-color: green;
+
+  } */
+
+
+
+
+
+
+h2 {
+  font-size: 16px;
+}
+
+.bSpan {
+  color: var(--handles-color);
+  font-size: 8px;
+  margin-bottom: 6px;
+}
+
+.sSpan {
+  color: var( --upgrade-green-color);
+  font-size: 6px;
+  padding-left: 2px;
+}
+
+.num {
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-around;
+  font-size: larger;
+  padding-top: 10px;
+  /* padding-bottom: 0; */
+}
+
+
+.bottom-count {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+p {
+  padding-top: 0;
+  font-size: 8px;
+  font-weight: lighter;
+  color: var( --handles-color);
+}
+
+.icon {
+  width: 4px;
+  height: 3px;
+}
+
+.logo {
+  width: 10px;
+  height: 10px;
+}
+
+.social-media-dashboard {
+  padding-top: 20px;
+width: auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+/* margin: 50px; */
+margin-left: 10px;
+margin-bottom: 30px;
+}
+
+.first-layer {
+width: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 2px;
+align-items: center;
+justify-content: space-between;
+margin-left: 10px;
+}
+
+.column1,
+.column2,
+.column3,
+.column4 {
+  /* border: 1px solid green; */
+  /* display: block; */
+  padding: 10px;
+  border-radius: 6px;
+  height: 110px;
+  background: var(--background-inner-color);
+  width: 110px;
+  margin: 2px;
+  align-items: center;
+  text-align: center;
+}
+
+.column1 {
+  border: none;
+  border-top: 3px solid hsl(208, 92%, 53%);
+}
+
+.column2 {
+  border: none;
+  border-top: 3px solid  hsl(203, 89%, 53%);
+}
+
+.column3 {
+  border: none;
+  border-top: 3px solid hsl(37, 97%, 70%);
+}
+
+.column4 {
+  border: none;
+  border-top: 3px solid hsl(348, 97%, 39%);
+}
+
+.overview-container {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2px;
+  /* margin-top: 2px; */
+}
+
+.overview {
+  margin: 10px;
+}
+
+.column-1,
+.column-2,
+.column-3,
+.column-4,
+.column-5,
+.column-6,
+.column-7,
+.column-8 {
+  padding: 5px;
+  border-radius: 2px;
+  height: 60px;
+  background: var(--background-inner-color);
+  margin: 8px;
+}
+
+h3 {
+  font-weight: 700;
+  /* padding: 10px; */
+  /* font-size: larger; */
+}
+
+.pv {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 6px;
+}
+
+
+
+
+
